@@ -1,0 +1,187 @@
+body	{
+	background-color: #201f32;
+	font-family: helvetica;
+	margin: 0px;
+}
+
+h1	{
+	font-size: 60px;
+	margin-left: 1.58%;
+}
+
+h2	{
+	font-size: 24px;
+	margin-left: 1.58%;
+}
+
+h3
+
+a:hover, a:visited, a:link, a:active	{
+    text-decoration: none;
+    color: black;
+}
+
+footer	{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	bottom: 0px;
+	color: rgba(255, 255, 255, 0.5);
+	font-family: georgia;
+}
+
+.link {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.page_wrapper	{
+}
+
+.logo	{
+	position: fixed; top: 10px;
+	margin: 2%;
+	width: 9%;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+#connor_logo	{
+	width: 80%;
+	margin: 10%;
+}
+
+.portfolio_wrapper	{
+	width: 66%;
+	margin-left: 19%; margin-top: 30px; margin-bottom: 60px;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.main_heading	{
+	padding: 2%;
+}
+
+.page_heading	{
+	margin: 0px;
+}
+
+.page_subheading	{
+	margin: 0px;
+	margin-bottom: 3%;
+}
+
+#change_viewing_type	{
+	display: inline-block;
+	float: right;
+	margin: 0px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.section_container	{
+	display: inline-block; clear: both;
+	position: relative;
+	text-align: center;
+	width: 94%;
+	margin: 2%;
+	padding: 1%;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.section_heading_container	{
+	position: absolute;
+	width: 98%; 
+	top: 37%;
+	z-index: 2;
+}
+
+.section_heading	{
+	position: relative;
+	text-align: center;
+	margin: 0px;
+	font-size: 60px;
+	color: black; background-color: rgba(255, 255, 255, 0.35);
+	text-decoration: none;
+}
+
+.blog_tile_photo	{
+	position: relative;
+	width: 30%;
+	margin: 1%;
+	
+}
+
+.side_bar	{
+	position: fixed; right: 30px; top: 0px;
+	width: 3.68%; min-width: 58px; height: 100%;
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+#side_bar_links	{
+	position: fixed; bottom: 45px; right: 30px;
+	width: 3.68%; min-width: 58px; height: 180px;
+}
+
+#instagram	{
+	position: relative;
+	margin: 25%; 
+	width: 50%;
+}
+#contact	{
+	position: relative; margin-top: 130%;
+	transform: rotate(-90deg);
+	font-size: 24px;
+	color: black;
+	text-decoration: none;
+}
+
+#email	{
+	font-family: georgia;
+	text-align: left;
+	margin: 60px 30px 60px 1%;
+}
+
+/*Sort by Date Specific*/
+
+.tile_container	{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+}
+
+.date_tile_photo	{
+	position: relative;
+	width: 100%;
+	margin: 0px;
+}
+
+.tile_caption	{
+	display: block;
+	float: left;
+	text-align: left;
+	font-family: georgia;
+	font-size: 14pt;
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+.tile_date	{
+	display: block;
+	float: right;
+	text-align: right;
+	font-family: georgia;
+	font-size: 14pt;
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 0px;
+}
+
+/*Page specific CSS*/
+
+.page_content_container	{
+	text-align: left;
+}
