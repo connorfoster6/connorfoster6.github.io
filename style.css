@@ -5,12 +5,12 @@ body	{
 }
 
 h1	{
-	font-size: 60px;
+	font-size: calc(40px + 2vw);
 	margin-left: 1.58%;
 }
 
 h2	{
-	font-size: 24px;
+	font-size: calc(14px + 0.5vw);
 	margin-left: 1.58%;
 }
 
@@ -27,9 +27,80 @@ footer	{
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.2);
 	bottom: 0px;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.7);
 	font-family: georgia;
+	z-index: 4;
 }
+
+/*Mobile integration*/
+
+/*@media screen and (min-resolution: 190dpi)*/
+@media screen and (max-width: 800px) 	{
+	.page_header	{
+		position: fixed; top: 0px; left: 0px;
+		margin: 0;
+		padding: 3vh;
+		width: 94vw; height: 4vh;
+		background-color: rgba(255, 255, 255, 0.7);
+		z-index: 3;
+	}
+	.logo	{
+		height: 100%;
+		background-image: url("images/connor_logo_hor.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#connor_logo	{
+		display: none;
+		
+	}
+	.portfolio_wrapper	{
+		width: calc(98vw - 28px);
+		margin: 14vh 28px 60px 2vw;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	.side_bar	{
+		position: fixed; top: 0px; right: 0px;
+		margin: 0;
+		padding: 3vh 6vw 3vh 4vw;
+		width: 40vw; height: 4vh;
+		z-index: 4;
+	}
+
+	#side_bar_links	{
+		display: block;
+		float: right;
+		padding: 0;
+		margin: 0;
+		width: auto; height: 4vh;
+	}
+
+	#instagram	{
+		height: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: calc(29px + 0.5vh);
+		margin: 0;
+	}
+	#contact	{
+		position: relative;
+		display: inline-block;
+		font-size: 24px;
+		color: black;
+		text-decoration: none;
+		margin: 0;
+		margin-bottom: 0.2vh;
+		float: right;
+	}
+	.side_bar_divider	{
+		display: inline-block;
+		padding-right: 1vw;
+		margin: 0;
+	}
+
+}
+
+/*End of mobile*/
 
 .link {
 	color: black;
@@ -41,9 +112,15 @@ footer	{
 .page_wrapper	{
 }
 
+@media screen and (min-width: 801px)	{
+
+.page_header	{
+	position: fixed; top: 1vh
+}
+
 .logo	{
-	position: fixed; top: 10px;
-	margin: 2%;
+	position: fixed; top: 3vh; left: 3vh;
+	margin: 0;
 	width: 9%;
 	background-color: rgba(255, 255, 255, 0.35);
 }
@@ -55,13 +132,20 @@ footer	{
 
 .portfolio_wrapper	{
 	width: 66%;
-	margin-left: 19%; margin-top: 30px; margin-bottom: 60px;
+	margin-left: 19%; margin-top: 3vh; margin-bottom: 60px;
 	background-color: rgba(255, 255, 255, 0.35);
+}
 }
 
 .main_heading	{
 	padding: 2%;
 }
+
+.heading_prefix	{
+	margin: 0px;
+	font-size: calc(20px + 0.5vw);
+}
+
 
 .page_heading	{
 	margin: 0px;
@@ -70,6 +154,9 @@ footer	{
 .page_subheading	{
 	margin: 0px;
 	margin-bottom: 3%;
+	font-style: italic;
+	font-family: georgia;
+	font-weight: normal;
 }
 
 #change_viewing_type	{
@@ -79,32 +166,27 @@ footer	{
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
+	font-size: calc(12px + 0.5vw);
 }
 
 .section_container	{
 	display: inline-block; clear: both;
 	position: relative;
 	text-align: center;
+	justify-content: center;
 	width: 94%;
 	margin: 2%;
 	padding: 1%;
 	background-color: rgba(255, 255, 255, 0.35);
 }
 
-.section_heading_container	{
-	position: absolute;
-	width: 98%; 
-	top: 37%;
-	z-index: 2;
-}
-
 .section_heading	{
-	position: relative;
-	text-align: center;
-	margin: 0px;
-	font-size: 60px;
-	color: black; background-color: rgba(255, 255, 255, 0.35);
-	text-decoration: none;
+	position: absolute; top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	height: 24%; width: auto;
+	padding: 1%;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.35);
 }
 
 .blog_tile_photo	{
@@ -114,28 +196,32 @@ footer	{
 	
 }
 
-.side_bar	{
-	position: fixed; right: 30px; top: 0px;
-	width: 3.68%; min-width: 58px; height: 100%;
-	background-color: rgba(255, 255, 255, 0.35);
-}
+@media screen and (min-width: 801px)	{
 
-#side_bar_links	{
-	position: fixed; bottom: 45px; right: 30px;
-	width: 3.68%; min-width: 58px; height: 180px;
-}
+	.side_bar	{
+		position: fixed; right: 2vw; top: 0px;
+		width: calc(40px + 2vw); height: 100vh;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
 
-#instagram	{
-	position: relative;
-	margin: 25%; 
-	width: 50%;
-}
-#contact	{
-	position: relative; margin-top: 130%;
-	transform: rotate(-90deg);
-	font-size: 24px;
-	color: black;
-	text-decoration: none;
+	#side_bar_links	{
+		position: fixed; bottom: 6vh; right: 2vw;
+		width: calc(40px + 2vw);
+	}
+
+	#instagram	{
+		position: relative;
+		margin: 25%; 
+		width: 50%;
+	}
+	#contact	{
+		position: relative;
+		margin-top: 80px;
+		transform: rotate(-90deg);
+		font-size: 24px;
+		color: black;
+		text-decoration: none;
+	}
 }
 
 #email	{
