@@ -103,6 +103,18 @@ footer	{
 
 }
 
+/*Mobile flexibility sans scrollbar*/
+
+@media screen and (max-width: 450px)	{
+	.portfolio_wrapper	{
+		width: 98vw;
+		margin: 14vh 2vw 60px 2vw;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+}
+
+/*End of mobile*/
+/*End of mobile*/
 /*End of mobile*/
 
 .link {
