@@ -33,6 +33,11 @@ footer	{
 	z-index: 4;
 }
 
+p	{
+	font-family: georgia;
+	line-height: 1.3em;
+}
+
 /*Mobile integration*/
 
 /*@media screen and (min-resolution: 190dpi)*/
