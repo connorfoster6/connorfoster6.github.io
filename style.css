@@ -15,8 +15,6 @@ h2	{
 	margin-left: 1.58%;
 }
 
-h3
-
 a:hover, a:visited, a:link, a:active	{
     text-decoration: none;
     color: black;
@@ -38,9 +36,7 @@ p	{
 	line-height: 1.3em;
 }
 
-/*Mobile integration*/
-
-/*@media screen and (min-resolution: 190dpi)*/
+/*Small frame (with scrollbar)*/
 @media screen and (max-width: 800px)	{
 	.page_header	{
 		box-sizing: border-box;
@@ -105,22 +101,215 @@ p	{
 		margin: 0;
 		height: 100%; 
 	}
-
+	.tile_container	{
+		position: relative;
+		display: inline-block;
+		width: 30%;
+		margin: 1%;
+	}
+	.date_tile_photo	{
+		position: relative;
+		width: 100%;
+		margin: 0px;
+	}
+	.tile_caption	{
+		display: block;
+		float: left;
+		text-align: left;
+		font-family: georgia;
+		font-weight: normal;
+		margin: 0px;
+	}
+	.tile_date	{
+		display: block;
+		float: right;
+		text-align: right;
+		font-family: georgia;
+		font-weight: normal;
+		font-style: italic;
+		margin: 0px;
+	}
 }
 
-/*Mobile flexibility sans scrollbar*/
+/*Small frame (tile adjust)*/
+@media screen and (max-width: 650px)	{
+	.tile_container	{
+		position: relative;
+		display: inline-block;
+		width: 47%;
+		margin: 1%;
+	}
+}
 
+/*Mobile frame (sans scrollbar)*/
 @media screen and (max-width: 450px)	{
 	.portfolio_wrapper	{
 		width: 96vw;
 		margin: 14vh 2vw 60px 2vw;
 		background-color: rgba(255, 255, 255, 0.35);
 	}
+	.tile_container	{
+		position: relative;
+		display: inline-block;
+		width: 47%;
+		margin: 1%;
+	}
+	.date_tile_photo	{
+		position: relative;
+		width: 100%;
+		margin: 0px;
+	}
+	.tile_caption	{
+		display: block;
+		float: left;
+		text-align: left;
+		font-family: georgia;
+		font-weight: normal;
+		margin: 0px;
+	}
+	.tile_date	{
+		display: block;
+		float: right;
+		text-align: right;
+		font-family: georgia;
+		font-weight: normal;
+		font-style: italic;
+		margin: 0px;
+	}
 }
 
-/*End of mobile*/
-/*End of mobile*/
-/*End of mobile*/
+/*Medium frame*/
+@media screen and (min-width: 801px)	{
+
+	.page_header	{
+		position: fixed; top: 1vh
+	}
+
+	.logo	{
+		position: fixed; top: 3vh; left: 3vh;
+		margin: 0;
+		width: 7vw;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+
+	#connor_logo	{
+		width: 80%;
+		margin: 10%;
+	}
+
+	.portfolio_wrapper	{
+		width: 75vw;
+		margin-left: 12vw; margin-top: 3vh; margin-bottom: 60px;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	.side_bar	{
+		position: fixed; right: 2vw; top: 0px;
+		width: calc(40px + 2vw); height: 100vh;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+
+	#side_bar_links	{
+		position: fixed; bottom: 6vh; right: 2vw;
+		width: calc(40px + 2vw);
+	}
+
+	#instagram	{
+		position: relative;
+		margin: 25%; 
+		width: 50%;
+	}
+	#contact	{
+		position: relative;
+		margin-top: 80px;
+		transform: rotate(-90deg);
+		font-size: 24px;
+		color: black;
+		text-decoration: none;
+	}
+	.tile_container	{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+	}
+	.date_tile_photo	{
+		position: relative;
+		width: 100%;
+		margin: 0px;
+	}
+	.tile_caption	{
+		display: block;
+		float: left;
+		text-align: left;
+		font-family: georgia;
+		font-weight: normal;
+		margin: 0px;
+	}
+	.tile_date	{
+		display: block;
+		float: right;
+		text-align: right;
+		font-family: georgia;
+		font-weight: normal;
+		font-style: italic;
+		margin: 0px;
+	}
+}
+
+/*Large frame*/
+@media screen and (min-width: 1001px)	{
+
+	.page_header	{
+		position: fixed; top: 1vh
+	}
+
+	.logo	{
+		position: fixed; top: 3vh; left: 3vh;
+		margin: 0;
+		width: 9%;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+
+	#connor_logo	{
+		width: 80%;
+		margin: 10%;
+	}
+
+	.portfolio_wrapper	{
+		width: 66%;
+		margin-left: 19%; margin-top: 3vh; margin-bottom: 60px;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	.tile_container	{
+		position: relative;
+		display: inline-block;
+		width: 30%;
+		margin: 1%;
+	}
+	.date_tile_photo	{
+		position: relative;
+		width: 100%;
+		margin: 0px;
+	}
+	.tile_caption	{
+		display: block;
+		float: left;
+		text-align: left;
+		font-family: georgia;
+		font-weight: normal;
+		margin: 0px;
+	}
+	.tile_date	{
+		display: block;
+		float: right;
+		text-align: right;
+		font-family: georgia;
+		font-weight: normal;
+		font-style: italic;
+		margin: 0px;
+	}
+}
+
 
 .link {
 	color: black;
@@ -130,31 +319,6 @@ p	{
 
 
 .page_wrapper	{
-}
-
-@media screen and (min-width: 801px)	{
-
-.page_header	{
-	position: fixed; top: 1vh
-}
-
-.logo	{
-	position: fixed; top: 3vh; left: 3vh;
-	margin: 0;
-	width: 9%;
-	background-color: rgba(255, 255, 255, 0.35);
-}
-
-#connor_logo	{
-	width: 80%;
-	margin: 10%;
-}
-
-.portfolio_wrapper	{
-	width: 66%;
-	margin-left: 19%; margin-top: 3vh; margin-bottom: 60px;
-	background-color: rgba(255, 255, 255, 0.35);
-}
 }
 
 .main_heading	{
@@ -210,39 +374,11 @@ p	{
 	background-color: rgba(255, 255, 255, 0.35);
 }
 
-.blog_tile_photo	{
+.port_tile_photo	{
 	position: relative;
 	width: 30%;
 	margin: 1%;
 	
-}
-
-@media screen and (min-width: 801px)	{
-
-	.side_bar	{
-		position: fixed; right: 2vw; top: 0px;
-		width: calc(40px + 2vw); height: 100vh;
-		background-color: rgba(255, 255, 255, 0.35);
-	}
-
-	#side_bar_links	{
-		position: fixed; bottom: 6vh; right: 2vw;
-		width: calc(40px + 2vw);
-	}
-
-	#instagram	{
-		position: relative;
-		margin: 25%; 
-		width: 50%;
-	}
-	#contact	{
-		position: relative;
-		margin-top: 80px;
-		transform: rotate(-90deg);
-		font-size: 24px;
-		color: black;
-		text-decoration: none;
-	}
 }
 
 #email	{
@@ -251,10 +387,9 @@ p	{
 	margin: 60px 30px 60px 1%;
 }
 
-
 /*Sort by Date Specific*/
 
-.tile_container	{
+/*.tile_container	{
 	position: relative;
 	display: inline-block;
 	width: 30%;
@@ -284,10 +419,16 @@ p	{
 	font-weight: normal;
 	font-style: italic;
 	margin: 0px;
-}
+}*/
 
 /*Page specific CSS*/
 
 .page_content_container	{
 	text-align: left;
+}
+
+.vimeo	{
+	width: 100%;
+	justify-content: center;
+	text-align: center;
 }
