@@ -36,7 +36,7 @@ p	{
 	line-height: 1.3em;
 }
 
-/*Small frame (with scrollbar)*/
+/*Desktop small frame (with scrollbar)*/
 @media screen and (max-width: 800px)	{
 	.page_header	{
 		box-sizing: border-box;
@@ -62,6 +62,36 @@ p	{
 		margin: 14vh calc(2vw + 17px) 60px 2vw;
 		background-color: rgba(255, 255, 255, 0.35);
 	}
+	.section_container	{
+		display: inline-block; clear: both;
+		position: relative;
+		text-align: center;
+		justify-content: center;
+		box-sizing: border-box;
+		width: 96%;
+		margin: 2%;
+		padding: 2%;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	.section_heading	{
+		position: absolute; top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+		height: 24%; width: auto;
+		padding: 1%;
+		z-index: 2;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	.design_section_container, .video_section_container, .technical_section_container	{
+		background-clip: padding-box;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 29vw;
+	}
+	.design_section_container		{background-image: url("thumbnails/large_design_cover.png"); }
+	.video_section_container		{background-image: url("thumbnails/large_video_cover.png"); }
+	.technical_section_container	{background-image: url("thumbnails/large_technical_cover.png"); }
+
 	.side_bar	{
 		position: fixed; top: 0px; right: 0px;
 		box-sizing: border-box;
@@ -139,6 +169,25 @@ p	{
 		width: 47%;
 		margin: 1%;
 	}
+	.design_section_container, .video_section_container, .technical_section_container	{
+		background-clip: padding-box;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 88vw;
+	}
+	.design_section_container		{background-image: url("thumbnails/small_design_cover.png"); }
+	.video_section_container		{background-image: url("thumbnails/small_video_cover.png"); }
+	.technical_section_container	{background-image: url("thumbnails/small_technical_cover.png"); }
+
+	.section_heading	{
+		position: absolute; top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+		height: 12%; width: auto;
+		padding: 1%;
+		z-index: 2;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
 }
 
 /*Mobile frame (sans scrollbar)*/
@@ -202,6 +251,36 @@ p	{
 		margin-left: 12vw; margin-top: 3vh; margin-bottom: 60px;
 		background-color: rgba(255, 255, 255, 0.35);
 	}
+	.section_container	{
+		display: inline-block; clear: both;
+		position: relative;
+		text-align: center;
+		justify-content: center;
+		box-sizing: border-box;
+		width: 96%;
+		margin: 2%;
+		padding: 1%;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	.section_heading	{
+		position: absolute; top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+		height: 24%; width: auto;
+		padding: 1%;
+		z-index: 2;
+		background-color: rgba(255, 255, 255, 0.35);
+	}
+	.design_section_container, .video_section_container, .technical_section_container	{
+		background-clip: padding-box;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 24vw;
+	}
+	.design_section_container		{background-image: url("thumbnails/large_design_cover.png"); }
+	.video_section_container		{background-image: url("thumbnails/large_video_cover.png"); }
+	.technical_section_container	{background-image: url("thumbnails/large_technical_cover.png"); }
+
 	.side_bar	{
 		position: fixed; right: 2vw; top: 0px;
 		width: calc(40px + 2vw); height: 100vh;
@@ -227,10 +306,10 @@ p	{
 		text-decoration: none;
 	}
 	.tile_container	{
-	position: relative;
-	display: inline-block;
-	width: 30%;
-	margin: 1%;
+		position: relative;
+		display: inline-block;
+		width: 30%;
+		margin: 1%;
 	}
 	.date_tile_photo	{
 		position: relative;
@@ -280,6 +359,17 @@ p	{
 		margin-left: 19%; margin-top: 3vh; margin-bottom: 60px;
 		background-color: rgba(255, 255, 255, 0.35);
 	}
+	.design_section_container, .video_section_container, .technical_section_container	{
+		background-clip: padding-box;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 21vw;
+	}
+	.design_section_container		{background-image: url("thumbnails/large_design_cover.png"); }
+	.video_section_container		{background-image: url("thumbnails/large_video_cover.png"); }
+	.technical_section_container	{background-image: url("thumbnails/large_technical_cover.png"); }
+
 	.tile_container	{
 		position: relative;
 		display: inline-block;
@@ -316,8 +406,6 @@ p	{
 	text-decoration: none;
 }
 
-
-
 .page_wrapper	{
 }
 
@@ -353,32 +441,11 @@ p	{
 	font-size: calc(12px + 0.5vw);
 }
 
-.section_container	{
-	display: inline-block; clear: both;
-	position: relative;
-	text-align: center;
-	justify-content: center;
-	box-sizing: border-box;
-	width: 96%;
-	margin: 2%;
-	padding: 1%;
-	background-color: rgba(255, 255, 255, 0.35);
-}
-
-.section_heading	{
-	position: absolute; top: 50%; left: 50%;
-	transform: translate(-50%, -50%);
-	height: 24%; width: auto;
-	padding: 1%;
-	z-index: 2;
-	background-color: rgba(255, 255, 255, 0.35);
-}
-
 .port_tile_photo	{
 	position: relative;
+	display: inline-block;
 	width: 30%;
-	margin: 1%;
-	
+	margin: 1%;	
 }
 
 #email	{
