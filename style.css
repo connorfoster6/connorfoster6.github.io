@@ -1,3 +1,7 @@
+html	{
+	min-height: 101vh;
+}
+
 body	{
 	background-color: #201f32;
 	font-family: helvetica;
@@ -29,11 +33,13 @@ footer	{
 	color: rgba(255, 255, 255, 0.7);
 	font-family: georgia;
 	z-index: 4;
+	height: 1.4em;
 }
 
 p	{
 	font-family: georgia;
 	line-height: 1.3em;
+	margin: 0;
 }
 
 /*Desktop small frame (with scrollbar)*/
@@ -181,11 +187,11 @@ p	{
 		background-repeat: no-repeat;
 		background-size: contain;
 		width: 100%;
-		height: 88vw;
+		height: 43vw;
 	}
-	.design_section_container		{background-image: url("thumbnails/small_design_cover.png"); }
-	.video_section_container		{background-image: url("thumbnails/small_video_cover.png"); }
-	.technical_section_container	{background-image: url("thumbnails/small_technical_cover.png"); }
+	.design_section_container		{background-image: url("thumbnails/medium_design_cover.jpg"); }
+	.video_section_container		{background-image: url("thumbnails/medium_video_cover.jpg"); }
+	.technical_section_container	{background-image: url("thumbnails/medium_technical_cover.jpg"); }
 
 	.section_heading	{
 		position: absolute; top: 50%; left: 50%;
@@ -211,6 +217,17 @@ p	{
 		margin: 14vh 2vw 60px 2vw;
 		background-color: rgba(255, 255, 255, 0.35);
 	}
+	.design_section_container, .video_section_container, .technical_section_container	{
+		background-clip: padding-box;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 88vw;
+	}
+	.design_section_container		{background-image: url("thumbnails/small_design_cover.png"); }
+	.video_section_container		{background-image: url("thumbnails/small_video_cover.png"); }
+	.technical_section_container	{background-image: url("thumbnails/small_technical_cover.png"); }
+
 	.tile_container	{
 		position: relative;
 		display: inline-block;
@@ -325,6 +342,7 @@ p	{
 		font-size: 24px;
 		color: black;
 		text-decoration: none;
+		line-height: 24px;
 	}
 	.tile_container	{
 		position: relative;
@@ -527,4 +545,14 @@ p	{
 
 .page_content_container	{
 	text-align: left;
+	column-count: 3;
+	column-width: 200px;
+}
+
+.vimeo	{
+	column-span: all;
+}
+
+.instagram-media	{
+	align-content: center;
 }
