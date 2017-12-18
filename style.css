@@ -3,7 +3,7 @@ html	{
 }
 
 body	{
-	background-color: #201f32;
+	background-color: rgb(32, 31, 50);
 	font-family: helvetica;
 	margin: 0px;
 	font-size: calc(0.7em + 0.3vw);
@@ -468,6 +468,7 @@ p	{
 
 .page_heading	{
 	margin: 0px;
+	font-size: calc(50px + 0.5vw);
 }
 
 .page_subheading	{
@@ -482,7 +483,7 @@ p	{
 	display: inline-block;
 	float: right;
 	margin: 0px;
-	color: black;
+	color: rgb(32, 31, 50);
 	text-decoration: none;
 	font-weight: bold;
 	font-size: calc(12px + 0.5vw);
