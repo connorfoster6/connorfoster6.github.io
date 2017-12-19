@@ -468,7 +468,7 @@ p	{
 
 .page_heading	{
 	margin: 0px;
-	font-size: calc(50px + 0.5vw);
+	font-size: calc(20px + 3vw);
 }
 
 .page_subheading	{
@@ -540,12 +540,12 @@ p	{
 
 .page_content_container	{
 	text-align: left;
-	column-count: 3;
-	column-width: 200px;
+/*	column-count: 3;
+	column-width: 200px;*/
 }
 
 .vimeo	{
-	column-span: all;
+	/*column-span: all;*/
 }
 
 .instagram-media	{
